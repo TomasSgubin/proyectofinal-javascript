@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Libre+Franklin:wght@100;200;300;400;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <header class="bg-dark">
+        <a href="index.html">
+            <img src="./public/android-chrome-512x512.png" class="logo" alt="logo de la pagina">
+        </a>
+        <h1 class="titulo text-white">Adrianita Musica</h1>
+    </header>
+    <nav class="container-fluid bg-dark position-sticky top-0">
+        <ul
+          class="nav nav-pills mb-3 py-3 container"
+          id="pills-tab"
+          role="tablist"
+        >
+          <li class="nav-item text-white" role="presentation">
+            <a
+              class="nav-link navbar-expand-lg navbar-dark h5"
+              id="pills-home-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-home"
+              type="button"
+              role="tab"
+              aria-controls="pills-home"
+              aria-selected="true"
+              >Inicio</a
+            >
+          </li>
+          <li class="nav-item" role="presentation">
+            <a
+              class="nav-link active navbar-expand-lg navbar-dark h5"
+              id="pills-profile-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-profile"
+              type="button"
+              role="tab"
+              aria-controls="pills-profile"
+              aria-selected="false"
+              >Productos</a
+            >
+          </li>
+          <li class="nav-item" role="presentation">
+            <a
+              class="nav-link navbar-expand-lg navbar-dark h5"
+              id="pills-contact-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-contact"
+              type="button"
+              role="tab"
+              aria-controls="pills-contact"
+              aria-selected="false"
+              >Carrito</a
+            >
+          </li>
+        </ul>
+    </nav>
+  
+      <div class="alert container position-sticky top-0 alert-primary hide" role="alert">
+      Producto Añadido al carrito!
+      </div>
+      <div class="alert container position-sticky top-0 alert-danger remove" role="alert">
+        Producto removido!
+      </div>
+  
+      <div class="tab-content text-white" id="pills-tabContent">
+            <div
+            class="tab-pane fade "
+            id="pills-home"
+            role="tabpanel"
+            aria-labelledby="pills-home-tab">
+            1
+            </div>
+        
+        
+        <div
+          class="tab-pane fade show active container"
+          id="pills-profile"
+          role="tabpanel"
+          aria-labelledby="pills-profile-tab">
+          <h2 class="h4 m-4 text-light">Productos</h2>
+        
+        <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
+  
+            <div class="col d-flex justify-content-center mb-4">
+              <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                <h5 class="card-title pt-2 text-center text-light">Allen & Heath XONE:23C</h5>
+                <img src="./public/allen 23c.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text text-white-50 description">Este mezclador para DJ de alto rendimiento está equipado con una tarjeta de sonido interna de 4 canales de 96 kHz y 24 bits de estéreo de alta calidad y ofrece conexión plug and play a través de X: LINK a los controladores de la serie Xone: K.</p>
+                  <h5 class="text-primary">Precio: <span class="precio">$130.114</span></h5>
+                  <div class="d-grid gap-2">
+                  <button  class="btn btn-light button">Añadir a Carrito</button>
+                </div>
+                </div>
+              </div>
+            </div>
+            <div class="col d-flex justify-content-center mb-4">
+              <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                <h5 class="card-title pt-2 text-center text-light">Pioneer DJM-900NXS2</h5>
+                <img src="./public/djm-900nxs2.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text text-white-50 description">Lleva tu actuación a un nuevo nivel con la DJM-900NXS2, que cuenta con nuestro primer procesador de mezclas de 64 bits para un sonido más cálido, más matizado.</p>
+                  <h5 class="text-primary">Precio: <span class="precio">$820.000</span></h5>
+                  <div class="d-grid gap-2">
+                  <button  class="btn btn-light button">Añadir a Carrito</button>
+                </div>
+                </div>
+              </div>
+            </div>
+            <div class="col d-flex justify-content-center mb-4">
+              <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                <h5 class="card-title pt-2 text-center text-light">Pioneer DJM-250MK2</h5>
+                <img src="./public/djm250.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text text-white-50 description">La DJM-250MK2 ha heredado algunas de las caracteristicas profesionales de la popular DJM-900NXS2, como el crossfader Magvel y el filtro Sound Color FX.</p>
+                  <h5 class="text-primary">Precio: <span class="precio">$112.486</span></h5>
+                  <div class="d-grid gap-2">
+                  <button  class="btn btn-light button">Añadir a Carrito</button>
+                </div>
+                </div>
+              </div>
+            </div>
+            <div class="col d-flex justify-content-center mb-4">
+              <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                <h5 class="card-title pt-2 text-center text-light">Pioneer DDJ-400</h5>
+                <img src="./public/ddj-400.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text text-white-50 description">Pioneer DJ DDJ-400 es la actualización del modelo más vendido de la gama de controladores básicos de la marca japonesa.</p>
+                  <h5 class="text-primary">Precio: <span class="precio">$78.972</span></h5>
+                  <div class="d-grid gap-2">
+                  <button  class="btn btn-light button">Añadir a Carrito</button>
+                </div>
+                </div>
+              </div>
+            </div>
+            <div class="col d-flex justify-content-center mb-4">
+              <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                <h5 class="card-title pt-2 text-center text-light">Pioneer DDJ 800</h5>
+                <img src="./public/ddj-800.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text text-white-50 description">El controlador DJ DDJ-800 de 2 canales es una configuración DJ profesional que está hecha para ir donde tú quieras. Esta unidad portátil hereda el diseño estilo club y las características populares del DDJ-1000, incluido la pantalla On Jog a Color.</p>
+                  <h5 class="text-primary">Precio: <span class="precio">$279.899</span></h5>
+                  <div class="d-grid gap-2">
+                  <button  class="btn btn-light button">Añadir a Carrito</button>
+                </div>
+                </div>
+              </div>
+            </div>
+            <div class="col d-flex justify-content-center mb-4">
+              <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                <h5 class="card-title pt-2 text-center text-light">Pioneer HDJ-X5</h5>
+                <img src="./public/hdj-x5.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text text-white-50 description">El diseño over-ear de estos auriculares te brinda una comodidad insuperable gracias a sus almohadillas. Al mismo tiempo, su sonido envolvente del mas alto nivel se convierte en el protagonista de la escena.</p>
+                  <h5 class="text-primary">Precio: <span class="precio">$38.476</span></h5>
+                  <div class="d-grid gap-2">
+                  <button  class="btn btn-light button">Añadir a Carrito</button>
+                </div>
+                </div>
+              </div>
+            </div>
+            <div class="col d-flex justify-content-center mb-4">
+              <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                <h5 class="card-title pt-2 text-center text-light">Jbl LSR305</h5>
+                <img src="./public/jbl-5.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text text-white-50 description">Monitores de estudio de dos vías con parlante de 5 pulgadas reforzado magnéticamente y transductor Soft-Domepara altas frecuencias de 1 pulgada.</p>
+                  <h5 class="text-primary">Precio: <span class="precio">$133.290</span></h5>
+                  <div class="d-grid gap-2">
+                  <button  class="btn btn-light button">Añadir a Carrito</button>
+                </div>
+                </div>
+              </div>
+            </div>
+            <div class="col d-flex justify-content-center mb-4">
+                <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                  <h5 class="card-title pt-2 text-center text-light">Sennheiser HD-25</h5>
+                  <img src="./public/sennheiser-hd-25.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <p class="card-text text-white-50 description">Diseñados para aplicaciones de monitoreo profesional, los auriculares HD 25 ofrecen una excelente atenuación del ruido ambiente.</p>
+                    <h5 class="text-primary">Precio: <span class="precio">$56.060</span></h5>
+                    <div class="d-grid gap-2">
+                    <button  class="btn btn-light button">Añadir a Carrito</button>
+                  </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col d-flex justify-content-center mb-4">
+                <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                  <h5 class="card-title pt-2 text-center text-light">Audio-Technica AT-LP60X-G</h5>
+                  <img src="./public/tocadiscos.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <p class="card-text text-white-50 description">Tanto si acaba de llegar al mundo del vinilo, está redescubriendo una colección de discos olvidada durante años o simplemente desea incorporar un tocadiscos para completar su sistema, el tocadiscos de transmisión por correa totalmente automático AT-LP60X-G es una opción excelente ya que es asequible y fácil de utilizar.</p>
+                    <h5 class="text-primary">Precio: <span class="precio">$35.497</span></h5>
+                    <div class="d-grid gap-2">
+                    <button  class="btn btn-light button">Añadir a Carrito</button>
+                  </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col d-flex justify-content-center mb-4">
+                <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                  <h5 class="card-title pt-2 text-center text-light">Pioneer VM-50</h5>
+                  <img src="./public/vm-50.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <p class="card-text text-white-50 description">Disfrute del audio de su fuente compatible con el monitor de estudio activo de 2 vías negro Pioneer DJ VM-50.</p>
+                    <h5 class="text-primary">Precio: <span class="precio">$58.804</span></h5>
+                    <div class="d-grid gap-2">
+                    <button  class="btn btn-light button">Añadir a Carrito</button>
+                  </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col d-flex justify-content-center mb-4">
+                <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                  <h5 class="card-title pt-2 text-center text-light">Pioner XDJ-RR</h5>
+                  <img src="./public/xdj-rr.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <p class="card-text text-white-50 description">Este equipo DJ de 2 canales hereda rasgos del diseño y funciones esenciales de nuestro multireproductor profesional y mesa de mezclas NXS2, y las empaqueta en un solo cuerpo ligero y portátil.</p>
+                    <h5 class="text-primary">Precio: <span class="precio">$335.878</span></h5>
+                    <div class="d-grid gap-2">
+                    <button  class="btn btn-light button">Añadir a Carrito</button>
+                  </div>
+                  </div>
+                </div>
+              </div>
+            <div class="col d-flex justify-content-center mb-4">
+              <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                <h5 class="card-title pt-2 text-center text-light">Allen & Heath Xone:K2</h5>
+                <img src="./public/xone k2.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text text-white-50 description">Xone K2 es un controlador MIDI universal compacto y de línea delgada que incorpora una tarjeta de sonido de 4 canales para usar con cualquier software de DJ. Xone: K2 se puede usar con cualquier software de DJ como Ableton, Virtual DJ, MixVibes, Mixx y Traktor Pro.</p>
+                  <h5 class="text-primary">Precio: <span class="precio">$84.623</span></h5>
+                  <div class="d-grid gap-2">
+                  <button  class="btn btn-light button">Añadir a Carrito</button>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div> 
+        </div>
+
+        
+        <div
+          class="tab-pane fade carrito"
+          id="pills-contact"
+          role="tabpanel"
+          aria-labelledby="pills-contact-tab"
+        >
+        <br>
+        <table class="table table-dark table-hover">
+          <thead>
+            <tr class="text-light">
+              <th scope="col">#</th>
+              <th scope="col">Productos</th>
+              <th scope="col">Precio</th>
+              <th scope="col">Cantidad</th>
+            </tr>
+          </thead>
+          <tbody class="tbody">
+            
+          
+            
+          </tbody>
+        </table>
+        <br><br>
+        <div class="row mx-4">
+          <div class="col">
+            <h3 class="itemCartTotal text-white">Total: 0</h3>
+          </div>
+          <div class="col d-flex justify-content-end">
+            <button class="btn btn-success">COMPRAR</button>
+          </div>
+        </div>
+        
+        </div>
+      </div>
+      
+    
+
+      <footer class="bg-dark p-3 mt-5">
+        <div class="container-fluid">
+            <div class="row p-3 text-white">
+                <div class="col-xs-12 col-md-6 col-lg-3">
+                  <p class="h3" style="font-weight: bold;">Adrianita Musica</p>
+                  <a href="index.html"><img src="./public/android-chrome-192x192.png" class="imagenredes" alt="logo adrianita"></a>
+                </div>
+                <div class="col-xs-12 col-md-6 col-lg-3">
+                  <p class="mb-3 h5" style="font-weight: bold;">Navegador</p>
+                  <div class="mb-3">
+                    <a class="text-white text-decoration-none" href="../index.html">Inicio</a>
+                  </div>
+                  <div class="mb-3">
+                    <a class="text-white text-decoration-none" href="store.html">Store</a>
+                  </div>
+                  <div class="mb-3">
+                    <a class="text-white text-decoration-none" href="blog.html">Blog</a>
+                  </div>
+                  <div class="mb-3">
+                    <a class="text-white text-decoration-none" href="nosotros.html">Nosotros</a>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-md-6 col-lg-3">
+                  <div class="mb-3">
+                  <a class="mb-3 h5 text-white text-decoration-none" href="contacto.html" style="font-weight: bold;">Contacto</a>
+                </div>
+                  <div class="mb-3">
+                    <p class="text-white text-decoration-none">Alberdi 4392</p>
+                  </div>
+                  <div class="mb-3">
+                    <p class="text-white text-decoration-none">CABA, CP 1626, Argentina</p>
+                  </div>
+                  <div class="mb-3">
+                    <p class="text-white text-decoration-none">Tel: +54114933-2910</p>
+                  </div>                 
+                </div>
+                <div class="col-xs-12 col-md-6 col-lg-3">
+                  <p class="mb-3 h5" style="font-weight: bold;" >Redes</p>
+                  <div class="mb-3">  
+                    <a href="https://www.facebook.com" target="_blank"><img src="./public/facebook.png" class="imagenredes" alt="logo facebook"></a>
+                  </div>
+                  <div class="mb-3">                    
+                    <a href="https://www.instagram.com" target="_blank"><img src="./public/instagram.png" class="imagenredes" alt="logo instagram"></a>
+                  </div>
+                  <div class="mb-3"> 
+                    <a href="https://twitter.com" target="_blank"><img src="./public/twitter.png" class="imagenredes" alt="logo twitter"></a>
+                  </div>
+                </div>  
+            </div>
+        </div>
+        <div class="logowhatsapp">
+                  
+          <a href="https://web.whatsapp.com/" target="_blank"><img src="./public/whatsapp.png" class="imglogo" alt="logo whatsapp"></a>
+      </div>
+      </footer>
+  
+      <script
+        src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+        crossorigin="anonymous"
+      ></script>
+      
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"
+      ></script>
+
+      <script src="./js/script.js"></script>
+</body>
+</html>

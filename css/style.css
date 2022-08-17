@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+body{
+    background-color: #313D52;
+    width: 100%;
+    height: 100vh;
+  }
+  header, .alert{
+    z-index: 100;
+  }
+  .carrito{
+    min-height: 80vh;
+    max-width: 1000px;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .table__productos{
+    display: flex;
+  }
+  .table__productos > img{
+    width: 9rem;
+    object-fit: contain;
+    border-radius: 6px;
+    margin-right: 20px;
+  }
+  .table__cantidad > input{
+    width: 40px;
+    border: none;
+    outline: 0;
+    font-size: 16px;
+    font-weight: 700;
+    margin-right: 30px;
+    margin-bottom: 20px;
+  }
+  .hide, .remove{
+    display: none;
+}
+.titulo {
+  font-size: 3rem; }
+.logo {
+  width: 90px;
+  height: auto;
+  border-radius: 5px; }
+.texto {
+  color: #000000;
+  font-size: 6mm;
+  font-weight: 500;
+  text-align: center; }
+.imglogo {
+  width: 80%;
+  height: auto; }
+.logowhatsapp, .logowhatsapp .imglogo {
+  position: fixed;
+  top: 92%;
+  left: 95%; }
+.titulo {
+    color: #ffffff;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 54px;
+    font-weight: 400; }
+  
+.logo {
+    width: 80px;
+    height: auto;
+    border-radius: 5px;
+    padding-left: 2px;
+    padding: 5px; }
+
+.imagenredes {
+ width: 30px;
+height: 30px; 
+}
