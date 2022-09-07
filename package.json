@@ -1,0 +1,23 @@
+{
+  "name": "proyecto-pagina03",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server": "json-server --watch db.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TomasSgubin/Proyecto-Final-Javascript.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TomasSgubin/Proyecto-Final-Javascript/issues"
+  },
+  "homepage": "https://github.com/TomasSgubin/Proyecto-Final-Javascript#readme",
+  "dependencies": {
+    "json-server": "^0.17.0"
+  }
+}

@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box; }
 body{
-    background-color: #313D52;
+    background-color: #a1a1a1;
     width: 100%;
     height: 100vh;
   }
@@ -34,8 +34,8 @@ body{
     margin-right: 30px;
     margin-bottom: 20px;
   }
-  .hide, .remove{
-    display: none;
+   .hide, .remove{
+    display: none; 
 }
 .titulo {
   font-size: 3rem; }
@@ -71,4 +71,24 @@ body{
 .imagenredes {
  width: 30px;
 height: 30px; 
+}
+
+.imagenestore {
+  max-width: 90%;
+  margin: auto;
+  padding: 20px; }
+
+.card-body {
+  flex: 1 1 auto;
+  padding: 1rem 1rem;
+}
+
+.card-añadircarrito {
+    padding: 0.5rem 1rem;
+    background-color: rgba(0,0,0,.03);
+    border-top: 1px solid rgba(0,0,0,.125)
+}
+
+.h5 {
+  color: white;
 }

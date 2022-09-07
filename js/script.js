@@ -6,7 +6,6 @@ Clickbutton.forEach(btn => {
   btn.addEventListener('click', addToCarritoItem)
 })
 
-
 function addToCarritoItem(e){
   const button = e.target
   const item = button.closest('.card')
@@ -20,10 +19,9 @@ function addToCarritoItem(e){
     img: itemImg,
     cantidad: 1
   }
-
+  
   addItemCarrito(newItem)
 }
-
 
 function addItemCarrito(newItem){
 
@@ -48,8 +46,12 @@ function addItemCarrito(newItem){
   carrito.push(newItem)
   
   renderCarrito()
-} 
 
+  swal({
+    title: "Producto agregado al carrito",
+    icon: "success",
+  });
+} 
 
 function renderCarrito(){
   tbody.innerHTML = ''
@@ -67,8 +69,7 @@ function renderCarrito(){
             <td class="table__cantidad">
               <input type="number" min="1" value=${item.cantidad} class="input__elemento">
               <button class="delete btn btn-danger">x</button>
-            </td>
-    
+            </td>    
     `
     tr.innerHTML = Content;
     tbody.append(tr)
@@ -89,6 +90,7 @@ function CarritoTotal(){
 
   itemCartTotal.innerHTML = `Total $${Total}`
   addLocalStorage()
+
 }
 
 function removeItemCarrito(e){
@@ -111,6 +113,11 @@ function removeItemCarrito(e){
 
   tr.remove()
   CarritoTotal()
+  
+  swal({
+    title: "Producto removido",
+    icon: "error",
+  });
 }
 
 function sumaCantidad(e){
@@ -137,3 +144,45 @@ window.onload = function(){
     renderCarrito()
   }
 }
+
+let botonComprar = document.getElementById("btn-comprar")
+      botonComprar.addEventListener("click", respuestaClick)
+      function respuestaClick(){
+        swal({
+          title: "Su compra ha sido realizada!",
+          icon: "success",
+        });
+      }
+
+const main = document.querySelector('.main')
+let url = 'https://rickandmortyapi.com/api/character/1,3,7,9,183,200,353,244,550,231,423,404'
+   
+fetch(url)
+    .then((response) => {
+      return response.json()
+    })
+    .then((json) => {
+        console.log(json)
+        
+        let personajes = json
+
+        personajes.forEach(personaje => {
+            const {name, image, status, species} = personaje
+                                        
+            main.innerHTML += `
+                                <div class="col d-flex justify-content-center mb-4">
+              <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                <h5 class="card-title pt-2 text-center text-light">${name}</h5>
+                <img src="${image}" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text text-white-50 description">Status: ${status}</p>
+                  <h5 class="white-50">Especie: <span class="precio">${species}</span></h5>
+                  <div class="d-grid gap-2">
+                  
+                </div>
+                </div>
+              </div>
+            </div>`                                                                             
+        })
+    })
+    .catch((error) => console.log(error))
